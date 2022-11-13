@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Big+Shoulders+Display:400,700&display=swap");
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%); 
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #fff;
+    font-family: "Open+Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.container .container__sedans {
+    background: var(--Bright-orange);
+    color: #fff;
+    width: 375px;
+    height: 370px;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container__sedans h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.container__sedans p {
+    font-size: 15px;
+    margin-top: 2rem;
+    width: 230px;
+}
+
+.container__sedans button {
+     background: #fff;
+     cursor: pointer;
+     border: 0;
+     outline: 0;
+     padding: 15px 30px;
+     margin-top: 3.5rem;
+     border-radius: 25px;
+     text-align: center;
+     color: var(--Bright-orange);
+     font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+.container .container__suvs{
+    background: var(--Dark-cyan);
+    color: #fff;
+    width: 375px;
+    height: 370px;
+    padding: 30px;
+}
+
+.container__suvs h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.container__suvs p {
+    font-size: 15px;
+    margin-top: 2rem;
+    width: 230px;
+}
+
+.container__suvs button {
+    background: #fff;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    margin-top: 3.5rem;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--Dark-cyan);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+.container .container__luxury {
+    background: var(--Very-dark-cyan);
+    color: #fff;
+    width: 375px;
+    height: 370px;
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container__luxury h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.container__luxury p {
+    font-size: 15px;
+    margin-top: 2rem;
+    width: 230px;
+}
+
+.container__luxury button {
+    background: #fff;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    margin-top: 3.5rem;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+         margin:20px 90px;
+    }
+
+    
+    .container .container__content  {
+        width: 320px;
+        height: 370px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .container{
+       margin-top:10rem;
+       flex-direction: row;
+   }
+
+   .container .container__content  {
+    width: 320px;
+    height: 550px;
+   }
+
+   .container__sedans {
+      border-radius: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+   }
+
+   .container__luxury {
+    border-radius: none;
+    border-bottom-right-radius:5px;
+    border-top-right-radius: 5px;
+   }
+
+   .container__content h1 {
+        margin-top: 5rem;
+   }
+   
+   .container__content p {
+       font-size: 17px;
+       width: 260px;
+       margin-top:3rem;
+       line-height: 35px;
+   }
+
+   .container__content button {
+       margin-top:8rem;
+       font-size: 17px;
+       padding: 19px 35px;
+       text-transform: capitalize;
+   }
+
+   .container__sedans button:hover {
+       background: var(--Bright-orange);
+       color: #fff;
+       border: 1px solid #fff;
+   }
+ 
+   .container__suvs button:hover {
+       background: var(--Dark-cyan);
+       color: #fff;
+       border: 1px solid #fff;
+   }
+ 
+   .container__luxury button:hover {
+       background: var(--Very-dark-cyan);
+       color: #fff;
+       border: 1px solid #fff;
+   }
+ 
+}
